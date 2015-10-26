@@ -1,0 +1,16 @@
+2015/10/21 20:51:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "event.php".' in C:\wamp\apps\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\apps\yii\web\CWebApplication.php(141): CWebApplication->runController('event.php')
+#1 C:\wamp\apps\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\emergency\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emergency/index.php/event.php
+---
+2015/10/25 17:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gallery".' in C:\wamp\apps\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\apps\yii\web\CWebApplication.php(141): CWebApplication->runController('gallery')
+#1 C:\wamp\apps\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\emergency\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/emergency/index.php/gallery
+---
