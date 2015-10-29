@@ -1,0 +1,21 @@
+.main {
+    background-color: #ADD8E6;
+}
+.logo{
+    color:blue;
+    font-size:50px;
+}
+
+.end{
+    color:#799497;
+    padding-top:20px;
+}
+.footer{
+    background-color: #191919;
+}
+.jumbotron h1{
+    color:white;
+}
+.jumbotron p{
+    color:white;
+}

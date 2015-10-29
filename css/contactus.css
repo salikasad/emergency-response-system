@@ -1,0 +1,36 @@
+.main {
+    background-color: #ADD8E6;
+}
+.logo{
+    color:blue;
+    font-size:50px;
+}
+.contact{
+    background-color: #101010;
+}
+.contact-form{
+    color:#f4781a;
+    font-size:20px;
+    font-family: Myriad Pro Regular;
+}
+.field{
+    color:#f4ffff;
+    font-family: Myriad Pro Regular;
+    font-size: 13px;
+}
+em{
+    color:#563d10;
+}
+.ers{
+    color:blue;
+}
+footer{
+    background-color:#191919 ;
+}
+.end{
+    color:#799497;
+    padding-top:20px;
+}
+.footer{
+    background-color: #191919;
+}

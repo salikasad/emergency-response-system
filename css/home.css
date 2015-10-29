@@ -1,0 +1,57 @@
+.main {
+    background-color: #ADD8E6;
+}
+.logo{
+    color:blue;
+    font-size:50px;
+}
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.end{
+    color:#799497;
+    padding-top:20px;
+}
+.footer{
+    background-color: #191919;
+}
+.content{
+    background-color: #CCFFCC;
+}
+h3{
+    text-align: center;
+    font-family: Myriad Pro Regular;
+    text-decoration:underline;
+}
+.view{
+    text-align: center;
+    color:#b20801;
+}
+video {
+    width: 100%;
+    height:auto;
+          }
+          .foot{
+              background-color:#333232 ;
+          }
+          .ngo{
+              opacity:1;
+          }
+          .ngo:hover{
+              opacity:0.4;
+          }
+          .gallery{
+              opacity:1;
+          }
+          .gallery:hover{
+              opacity:0.4;
+          }
+          .event{
+              opacity:1;
+          }
+          .event:hover{
+              opacity:0.4;
+          }
+          

@@ -6,24 +6,21 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-        'theme'=>'basic',
+     'theme' => 'bootstrap',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Emergency Response System',
+	'name'=>'ers',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
-    
-         'aliases' => array(
-
-        'bootstrap' => 'ext.bootstrap'
-    ),
+'aliases' => array(
+        'bootstrap' => 'ext.bootstrap'),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-                'bootstrap.behaviors.*',
-                'bootstrap.helpers.*',
-                'bootstrap.widgets.*'
+		 'bootstrap.behaviors.*',
+        'bootstrap.helpers.*',
+        'bootstrap.widgets.*',
 	),
 
 	'modules'=>array(
@@ -31,59 +28,48 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'12345',
-                    'generatorPaths' => array('bootstrap.gii',
-                    ),
+			'password'=>'ers',
+                     'generatorPaths' => array(
+                'bootstrap.gii', ),
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+            
 		
 	),
 
 	// application components
 	'components'=>array(
+
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-            'bootstrap' => array(
-            'class' => 'bootstrap.components.BsApi',   
-        ),
-            
-            
-            
+		'bootstrap' => array(
+            'class' => 'bootstrap.components.BsApi',),
+
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-                    
+                     'showScriptName'=>false,
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				 '<controller:\w+>'=>'<controller>/list',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                '<controller:\w+>/<id:\d+>/<title>'=>'<controller>/view',
+                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
 			),
 		),
-            
 		
-		/*
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
-		*/
-		// uncomment the following to use a MySQL database
-		
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=response_system',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-		),
-		
+
+		// database settings are configured in database.php
+		'db'=>require(dirname(__FILE__).'/database.php'),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
+
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -99,6 +85,7 @@ return array(
 				*/
 			),
 		),
+
 	),
 
 	// application-level parameters that can be accessed
