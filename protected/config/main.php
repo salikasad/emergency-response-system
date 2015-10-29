@@ -6,16 +6,24 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+        'theme'=>'basic',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Emergency Response System',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+    
+         'aliases' => array(
 
+        'bootstrap' => 'ext.bootstrap'
+    ),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'bootstrap.behaviors.*',
+                'bootstrap.helpers.*',
+                'bootstrap.widgets.*'
 	),
 
 	'modules'=>array(
@@ -24,6 +32,8 @@ return array(
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'12345',
+                    'generatorPaths' => array('bootstrap.gii',
+                    ),
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
@@ -36,6 +46,12 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+            'bootstrap' => array(
+            'class' => 'bootstrap.components.BsApi',   
+        ),
+            
+            
+            
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
