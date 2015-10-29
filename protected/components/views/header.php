@@ -19,5 +19,5 @@
                                     <li role="presentation"><a href="blogs.php">Blogs</a></li>
                               </ul>
                             </div><!--navigation ngo-page ending here-->
-                      
+                      <hr>
                       </header>
