@@ -8,7 +8,7 @@
 return array(
      'theme' => 'bootstrap',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'ers',
+	'name'=>'emergency response system',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
