@@ -63,8 +63,16 @@ return array(
 		
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+//		'db'=>require(dirname(__FILE__).'/database.php'),
 
+		'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=response_system',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '',
+			'charset' => 'utf8',
+		),
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -78,11 +86,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
+				
+//				array(
+//					'class'=>'CWebLogRoute',
+//				),
+				
 			),
 		),
 

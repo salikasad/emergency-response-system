@@ -62,6 +62,7 @@ class UserController extends Controller
 	 */
 	public function actionCreate()
 	{
+            $this->layout='//layouts/admin';
 		$model=new User;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -133,6 +134,7 @@ class UserController extends Controller
 	 */
 	public function actionAdmin()
 	{
+//            $this->layout='//layouts/admin';
 		$model=new User('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['User']))

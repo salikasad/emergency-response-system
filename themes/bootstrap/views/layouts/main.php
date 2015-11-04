@@ -22,15 +22,14 @@ and open the template in the editor.
                 <body>
                    
                     <div class="main">
-                        <br>
-                        <button class="btn btn-primary pull-right">Login</button>
                          <div class="container">
 						 
                         <?php $this->widget('HeaderWidget')?>
                         
                         
                             
-                            <?php echo "$content" ;?>
+                           <?php echo "$content" ;?>
+                             <br>
                                 <div class="footer">
                                    <?php $this->widget('FooterWidget');?>
                                </div><!--footer ending here-->

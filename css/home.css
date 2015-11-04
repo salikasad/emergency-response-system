@@ -1,57 +1,35 @@
 .main {
-    background-color: #ADD8E6;
+    background-color: #DFF2AE;
 }
 .logo{
-    color:blue;
-    font-size:50px;
+    background-color: #4c4c4c;
 }
- .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-.end{
-    color:#799497;
-    padding-top:20px;
+
+.navigation{
+    background-color:#B3B3B3 ;
 }
-.footer{
-    background-color: #191919;
+ul{
+    font-size: 20px;
 }
-.content{
-    background-color: #CCFFCC;
+.ending{
+    background-color:#616161 ;
 }
-h3{
-    text-align: center;
+p{
+ color:#FFF;
+    font-size:20px;
     font-family: Myriad Pro Regular;
-    text-decoration:underline;
 }
-.view{
-    text-align: center;
-    color:#b20801;
+.line{
+    width:80%;
+}
+.foot{
+    color:#FFF;
+    font-size: 16px;
 }
 video {
     width: 100%;
     height:auto;
           }
-          .foot{
-              background-color:#333232 ;
+          .jumbotron{
+              background-color:#DCE2A7;
           }
-          .ngo{
-              opacity:1;
-          }
-          .ngo:hover{
-              opacity:0.4;
-          }
-          .gallery{
-              opacity:1;
-          }
-          .gallery:hover{
-              opacity:0.4;
-          }
-          .event{
-              opacity:1;
-          }
-          .event:hover{
-              opacity:0.4;
-          }
-          
